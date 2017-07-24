@@ -33,7 +33,7 @@ def ishan(text):
 def GetList(f):
     List = []
     for i in f:
-        if not i == '\n' and ''.join(i).split():#''.join()返回字符串，split('分割标志',分割次数(数字)）可分割
+        if not i == '\n' and ''.join(i).split():#''.join()返回字符串，split('分割标志',分割次数(数字)）参数为空默认以空白符（包括'\n', '\r',  '\t','')分割 ' ')
             List.append(i.strip()) #strip('关键字')删除字符串中关键字，参数为空默认删除空白符（包括'\n', '\r',  '\t',  ' ')
     return List
 def GetVer(List):
